@@ -4,8 +4,8 @@ public:
         int i = 0;
         for(int j = 1; j < arr.size(); j++){
             if(arr[j] != arr[i]){
+                arr[i + 1] = arr[j];
                 i++;
-                arr[i] = arr[j];
             }
             
         }
